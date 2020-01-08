@@ -49,7 +49,7 @@ There is one position in the game window that if pressed will unleash some funky
 P.S- This might give you a headache.
 Hint: Sudoku doesn't likes to be cliked.
   
-![Click on the big Sudoku test]( "Sudoku")
+![Click on the big Sudoku test](https://github.com/shubh-sohi/Sudoku/blob/master/Assets/easter_egg.gif "Sudoku")
 
 The game implements the pygame library which can be installed in a mac using the following commend  
 `python -m pip install pygame==1.9.3`
