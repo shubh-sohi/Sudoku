@@ -63,4 +63,4 @@ recursion, which in some intense cases tends to become extreamly tricky if not h
 * If at any instance a slot returns False for all values 1 to 9, the while loop counter for row and columnd is manually changes 
 to go back to the previous solved slot row and column and try a diffternt value in that slot, different = other than the value previously used.
 
-  The colors are intentionally kept on the bright side to tyr and implement a cyber punk type theme.
+  The colors are intentionally kept on the bright side to try and implement a cyber punk type theme.
