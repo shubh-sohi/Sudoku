@@ -8,7 +8,7 @@ This game is still under minor and frequent updates and some TODO's. This is not
 user to see what numbers are already used.  
 * When the user hover over any one of the buttons, the highlight making it visually appealing. 
   
-![Hover]( "Sudoku")
+![Hover](https://github.com/shubh-sohi/Sudoku/blob/master/Assets/1.png "Sudoku")
 
 ### Helper row
 * When the user hover over any empty cube, the initially empty row besides the available row text gets filled up.  
