@@ -1,4 +1,4 @@
-from Sudoku.Sudoku_hover import is_cursor_inside
+from Sudoku.GUI.Sudoku_hover import is_cursor_inside
 
 from Sudoku.GUI.Sudoku_numbers import pygame, screen
 from Sudoku.Solver.Sudoku_init import get_values, Sudoku

@@ -1,10 +1,10 @@
 import random
 
-from Sudoku.Sudoku_fill import filler
-from Sudoku.Sudoku_helper import get_numbers, is_cursor_inside
-from Sudoku.Sudoku_hover import hover_main, clicked_hover
-from Sudoku.Sudoku_texts import *
-
+from Sudoku.GUI.Sudoku_fill import filler
+from Sudoku.GUI.Sudoku_helper import get_numbers, is_cursor_inside
+from Sudoku.GUI.Sudoku_hover import hover_main, clicked_hover
+from Sudoku.Solver.Sudoku_init import solver_main
+from Sudoku.GUI.Sudoku_texts import *
 from Sudoku.GUI.Sudoku_numbers import *
 
 pygame.init()
@@ -62,7 +62,7 @@ def main():
 
     running = True
     while running:
-
+        # print(pygame.mouse.get_pos())
         change_color()
         draw_grid()
         text_main()
@@ -76,6 +76,8 @@ def main():
             clicked_hover(pen_down_mouse)
             get_numbers(pen_down_mouse, is_clicked)
             filler(key, pen_down_mouse, finalize)
+        if 50 < pen_down_mouse[0] < 390 and 160 < pen_down_mouse[1] < 200:
+            pygame.draw.rect(screen, ((255, 0, 127)), (50, 155, 340, 50), 5)
         pygame.display.flip()
 
         for event in pygame.event.get():
@@ -85,6 +87,8 @@ def main():
                 cracy_color_mouse = pygame.mouse.get_pos()
                 if 35 < cracy_color_mouse[0] < 405 and 40 < cracy_color_mouse[1] < 120:
                     crazy_color_counter += 1
+                if 55 < cracy_color_mouse[0] < 385 and 160 < cracy_color_mouse[1] < 200:
+                    solver_main(Sudoku)
                 if is_cursor_inside():
                     key = None
                     pen_down_mouse = pygame.mouse.get_pos()
