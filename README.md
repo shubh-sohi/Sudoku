@@ -8,7 +8,7 @@ This game is still under minor and frequent updates and some TODO's. This is not
 user to see what numbers are already used.  
 * When the user hover over any one of the buttons, the highlight making it visually appealing. 
   
-![Hover](https://github.com/shubh-sohi/Sudoku/blob/master/Assets/1.png "Sudoku")
+![Hover](https://github.com/shubh-sohi/Sudoku/blob/master/Assets/1.png "Hover")
 
 ### Helper row
 * When the user hover over any empty cube, the initially empty row besides the available row text gets filled up.  
@@ -16,7 +16,7 @@ It uses an the get_values function defined and implemented in the Sudoku_init.py
 * The get_values function takes the current row and column as parameters which the GUI determines from the mouse position and then 
 the finction returns a python set() data structure with all used values. Using those values the helper row is filled up with numbers.
   
-![Helper row]( "Sudoku")
+![Helper row](https://github.com/shubh-sohi/Sudoku/blob/master/Assets/2.png "Helper row")
 
 ### Mouse Down
 * When the mouse button is clicked on an empty cube, the row and column highlighter get fixed to that row, column along with 
@@ -27,12 +27,14 @@ the helper row.
 * If the number user returns is in the helper row, and thus not in any row, column and subgrid. The cube is highlighted green 
 showing that the number entered has been accepted and is implemented into the Sudoku list.
   
-![Mouse Down]( "Sudoku")
+![Mouse Down](https://github.com/shubh-sohi/Sudoku/blob/master/Assets/3.png "Mouse Down")
+![Mouse Down](https://github.com/shubh-sohi/Sudoku/blob/master/Assets/4.png "Mouse Down")
+
 
 ### Solve Sudoku
 * Pressing the Solve Sudoku button will implement the solving algorithm defined and implemented in the Sudoku_init.py file.
   
-![Solve]( "Sudoku")
+![Solve](https://github.com/shubh-sohi/Sudoku/blob/master/Assets/5.png "Sudoku")
 
 ### TODO
 * Internal doccumentation
